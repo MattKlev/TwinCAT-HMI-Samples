@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="ST_Pump" Id="{182254b2-6c37-45f4-86e8-99d5c00c4c7e}">
+    <Declaration><![CDATA[TYPE ST_Pump :
+STRUCT
+    Name 			: STRING;
+	Speed			: LREAL;
+	State			: E_Pump_State;
+	Start			: BOOL;
+	Stop			: BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

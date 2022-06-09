@@ -1,0 +1,74 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65801bf9-8938-4d51-a622-7794f3bfff70}</ProjectGuid>
+    <SubObjectsSortedByName>True</SubObjectsSortedByName>
+    <DownloadApplicationInfo>true</DownloadApplicationInfo>
+    <WriteProductVersion>true</WriteProductVersion>
+    <GenerateTpy>false</GenerateTpy>
+    <Name>PLC</Name>
+    <ProgramVersion>3.1.4023.0</ProgramVersion>
+    <Application>{a5f5fc49-7b42-4c4a-b595-f2d2a21d36e2}</Application>
+    <TypeSystem>{ed1fdea9-c9ce-420a-ac43-3724c726500a}</TypeSystem>
+    <Implicit_Task_Info>{8a118fc9-ae5b-4bc8-b34a-d9ceddadf725}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{571c2206-57d1-4066-b6f9-4ba7c15e9a73}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{a3950adf-d982-492a-8332-40e543d59c54}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{6f659758-0488-48f4-b1f0-89840607549e}</LibraryReferences>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CreateIndirectBinding\PRG_IndirectBinding.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUT\E_Pump_State.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUT\ST_Pump.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlcTask.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CreateIndirectBinding" />
+    <Folder Include="DUT" />
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="Tc2_Standard">
+      <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_Standard</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_System">
+      <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_System</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc3_Module">
+      <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc3_Module</Namespace>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PLC.tmc">
+      <SubType>Content</SubType>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+  <Data>
+    <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" />
+      <d n="Values" t="Hashtable" />
+    </o>
+  </Data>
+  <TypeList>
+    <Type n="Hashtable">System.Collections.Hashtable</Type>
+    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+    <Type n="String">System.String</Type>
+  </TypeList>
+</XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

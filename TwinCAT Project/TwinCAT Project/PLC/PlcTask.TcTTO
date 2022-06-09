@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <Task Name="PlcTask" Id="{059193d3-9003-4dc5-92a1-c93c5aaac946}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>10000</CycleTime>
+    <Priority>20</Priority>
+    <PouCall>
+      <Name>PRG_IndirectBinding</Name>
+    </PouCall>
+    <TaskFBGuid>{fb742ca1-a3e8-45f4-acf5-d27286ac1c38}</TaskFBGuid>
+    <Fb_init>{5726105f-be7d-4ae6-aa01-b53f781df767}</Fb_init>
+    <Fb_exit>{b44d6c1d-8654-431c-8469-5add804484b6}</Fb_exit>
+    <CycleUpdate>{55734831-9dc0-451b-936e-22c0a7c77d20}</CycleUpdate>
+    <PostCycleUpdate>{0b390e9e-f1ea-4f57-8cf2-3a33c4f1de7d}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

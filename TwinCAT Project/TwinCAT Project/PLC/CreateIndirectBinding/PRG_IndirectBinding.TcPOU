@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <POU Name="PRG_IndirectBinding" Id="{afe703e7-fe5d-4d21-9c7b-cddc1f508fb2}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_IndirectBinding
+VAR
+	xInit			:BOOL:=TRUE;
+	arString		:ARRAY[0..Upper] OF STRING;
+	Pumps			:ARRAY[0..Upper] OF ST_Pump;	
+END_VAR
+VAR CONSTANT
+	Upper			:UINT:=3;
+END_VAR
+VAR_TEMP
+	i				:UDINT;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF xInit THEN
+	xInit		:=FALSE;
+	FOR i:=0 TO Upper DO
+		arString[i]		:=CONCAT('This is Index:',TO_STRING(i));
+		Pumps[i].Name	:=CONCAT('Pump ', TO_STRING(i));
+		Pumps[i].State  := E_Pump_State.Runing;		
+	END_FOR
+END_IF
+
+FOR i:=0 TO Upper DO
+	Pumps[i].Speed	:=Pumps[i].Speed+(i+1);
+END_FOR]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
