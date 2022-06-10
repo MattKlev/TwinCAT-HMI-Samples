@@ -27,8 +27,9 @@
             "symbolExpression": "%ctrl%arStringIndex%/ctrl%"
           },
           {
-            "objectType": "FunctionExpression",
-            "functionExpression": "'Text'"
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/ControlPropertyName",
+            "value": null
           },
           {
             "objectType": "Symbol",
@@ -58,7 +59,5 @@
 </script>
 </div>
 <div id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="366" data-tchmi-left-unit="px" data-tchmi-text="Create indirect array binding function example" data-tchmi-top="71" data-tchmi-top-unit="px" data-tchmi-width="306" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
-</div>
-<div id="TcHmiTextblock_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="366" data-tchmi-left-unit="px" data-tchmi-text="Textblock" data-tchmi-top="164" data-tchmi-top-unit="px" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
 </div>
 </div>
